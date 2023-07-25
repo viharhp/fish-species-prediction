@@ -8,19 +8,19 @@ The Fish Prediction web application is built using Flask, a Python web framework
 
 2. Install the required Python packages using `pip`:
 
-# pip install Flask scikit-learn pandas
+` pip install Flask scikit-learn pandas `
 
 3. Prepare your fish data in a CSV file. The CSV file should have columns: "Weight," "Length1," "Length2," "Length3," "Height," "Width," and "Species."
 
 4. Train the machine learning model using your fish data. Edit the `train_model.py` script with the path to your CSV file and the appropriate model training code. Then, run the script to train the model and save it to a file named `fish_species_model.joblib`:
 
-# python train_model.py
+` python train_model.py `
 
 5. Ensure you have the trained model file (`fish_species_model.joblib`) in the project directory.
 
 6. Run the Flask application:
 
-# python app.py
+` python app.py `
 
 7. Open your web browser and go to `http://localhost:5000/` to access the Fish Prediction web application.
 
