@@ -4,15 +4,15 @@ import joblib
 
 app = Flask(__name__)
 
-# Load the pre-trained model
-# model = joblib.load("C:/Durham/2000 Applied Machine Learning/Lab4/Flask/fish_species_model.joblib")
-current_dir = os.path.dirname(os.path.abspath(__file__))
+# # Load the pre-trained model
+# # model = joblib.load("C:/Durham/2000 Applied Machine Learning/Lab4/Flask/fish_species_model.joblib")
+# current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Update the model file path based on the current directory
-model_file_path = os.path.join(current_dir, "fish_species_model.pkl")
+# # Update the model file path based on the current directory
+# model_file_path = os.path.join(current_dir, "fish_species_model.pkl")
 
 # Load the model using the updated file path
-model = joblib.load(model_file_path)
+model = joblib.load('fish_species_model.pkl')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
