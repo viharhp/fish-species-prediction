@@ -9,7 +9,7 @@ app = Flask(__name__)
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Update the model file path based on the current directory
-model_file_path = os.path.join(current_dir, "fish_species_model.joblib")
+model_file_path = os.path.join(current_dir, "fish_species_model.pkl")
 
 # Load the model using the updated file path
 model = joblib.load(model_file_path)

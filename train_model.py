@@ -14,4 +14,4 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X, y)
 
 # Save the trained model to a file
-joblib.dump(model, 'fish_species_model.joblib')
+joblib.dump(model, 'fish_species_model.pkl')
