@@ -14,7 +14,7 @@ The Fish Prediction web application is built using Flask, a Python web framework
 
 4. The `app.py` file contains code for training the machine learning model using the fish data. Edit the script with the path to your CSV file and the appropriate model training code. Then, run the script to train the model and save it to a file named `fish_species_model.pkl`:
 
-5. Ensure you have the trained model file (`fish_species_model.joblib`) in the project directory.
+5. Ensure you have the trained model file (`fish_species_model.pkl`) in the project directory.
 
 6. Run the Flask application:
 
