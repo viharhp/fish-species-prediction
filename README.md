@@ -12,9 +12,7 @@ The Fish Prediction web application is built using Flask, a Python web framework
 
 3. Prepare your fish data in a CSV file. The CSV file should have columns: "Weight," "Length1," "Length2," "Length3," "Height," "Width," and "Species."
 
-4. Train the machine learning model using your fish data. Edit the `train_model.py` script with the path to your CSV file and the appropriate model training code. Then, run the script to train the model and save it to a file named `fish_species_model.joblib`:
-
-` python train_model.py `
+4. The `app.py` file contains code for training the machine learning model using the fish data. Edit the script with the path to your CSV file and the appropriate model training code. Then, run the script to train the model and save it to a file named `fish_species_model.pkl`:
 
 5. Ensure you have the trained model file (`fish_species_model.joblib`) in the project directory.
 
@@ -32,9 +30,9 @@ The Fish Prediction web application is built using Flask, a Python web framework
 
 ## Customization
 
-- If you want to use a different trained model, replace the `fish_species_model.joblib` file with your own trained model file. Ensure that the model's input features match the order of the input fields in the HTML form.
+- If you want to use a different trained model, replace the `fish_species_model.pkl` file with your own trained model file. Ensure that the model's input features match the order of the input fields in the HTML form.
 
-- Customize the `train_model.py` script to use your own data and model training pipeline for better predictions.
+- Customize the `app.py` script to use your own data and model training pipeline for better predictions.
 
 ## Acknowledgments
 
